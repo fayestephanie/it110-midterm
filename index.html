@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f2efe8" name="theme-color"/>
+  <title>
+   Group 8 | IT 110 Portfolio
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav aria-label="Main navigation" class="main-nav">
+    <div class="nav-content">
+     <a class="logo" href="#home">
+      IT 110
+     </a>
+     <ul class="nav-links">
+      <li>
+       <a href="#home">
+        HOME
+       </a>
+      </li>
+      <li>
+       <a href="#about">
+        ABOUT
+       </a>
+      </li>
+      <li>
+       <a href="#profiles">
+        PROFILE
+       </a>
+      </li>
+     </ul>
+     <a class="nav-btn" href="app.html">
+      OPEN SCANNER &nearrow;
+     </a>
+    </div>
+   </nav>
+  </header>
+  <main class="pictures">
+   <section aria-labelledby="team-title" class="team-section" id="home">
+    <p class="eyebrow">
+     INTRODUCTION OF THE TEAM
+    </p>
+    <h1 id="team-title">
+     Group 8
+    </h1>
+    <p class="team-intro">
+     A collaborative IT 110 project focused on making QR code scanning simple, accessible, and useful.
+    </p>
+    <div aria-label="Team member carousel" class="carousel" id="carousel">
+     <div class="card-track" id="cardTrack">
+      <article class="member-card" data-index="0" tabindex="0">
+       <img alt="Portrait for Faye Stephanie F. Bihag" src="assets/faye.png"/>
+       <div class="card-caption">
+        <h2>
+         Faye Stephanie F. Bihag
+        </h2>
+        <p>
+         JavaScript Logic &amp; API Integration/Project Management &amp; Documentation
+        </p>
+       </div>
+      </article>
+      <article class="member-card" data-index="1" tabindex="0">
+       <img alt="Portrait for Pauline S. Alvez" src="assets/alvez.png"/>
+       <div class="card-caption">
+        <h2>
+         Pauline S. Alvez
+        </h2>
+        <p>
+         HTML Structure &amp; Semantics
+        </p>
+       </div>
+      </article>
+      <article class="member-card" data-index="2" tabindex="0">
+       <img alt="Portrait for Mary Jane Quisto" src="assets/quisto.png"/>
+       <div class="card-caption">
+        <h2>
+         Mary Jane Quisto
+        </h2>
+        <p>
+         CSS Styling &amp; Layout
+        </p>
+       </div>
+      </article>
+     </div>
+    </div>
+    <div aria-label="Carousel controls" class="carousel-controls">
+     <button aria-label="Previous member" id="previous" type="button">
+      &lsaquo;
+     </button>
+     <div aria-label="Choose a team member" class="indicators" id="indicators">
+      <button aria-label="Show Faye Stephanie F. Bihag" type="button">
+      </button>
+      <button aria-label="Show Pauline S. Alvez" type="button">
+      </button>
+      <button aria-label="Show Mary Jane Quisto" type="button">
+      </button>
+     </div>
+     <button aria-label="Next member" id="next" type="button">
+      &nearrow;
+     </button>
+    </div>
+    <p aria-live="polite" class="counter" id="counter">
+     01 / 03
+    </p>
+    <p class="instruction">
+     CLICK &middot; DRAG &middot; USE ARROWS
+    </p>
+   </section>
+   <section aria-labelledby="about-title" class="about-section" id="about">
+    <div class="about-layout">
+     <div class="about-content">
+      <p class="eyebrow">
+       QR TECHNOLOGY &middot; OUR PROJECT
+      </p>
+      <h2 id="about-title">
+       QR Code
+       <span>
+        Scanner
+       </span>
+      </h2>
+      <p class="about-description">
+       Our QR Code Scanner helps users read QR codes using a device camera or an uploaded image. It can reveal text, links, contact details, and other information encoded in a QR code, making information access faster and more convenient.
+      </p>
+      <a class="primary-link" href="app.html">
+       Try the QR Scanner
+       <span>
+        &nearrow;
+       </span>
+      </a>
+     </div>
+     <div class="qr-card-area">
+      <div class="qr-floating-card" id="qrFloatingCard">
+       <div class="qr-card-icon">
+        <img alt="" aria-hidden="true" src="assets/camera.svg"/>
+       </div>
+       <div class="qr-card-content">
+        <p class="qr-card-label">
+         DEVICE ACCESS
+        </p>
+        <h3>
+         Camera Scanner
+        </h3>
+        <p>
+         Allow camera access to scan a QR code in real time, or upload an image if camera access is unavailable.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="profiles-wrap" id="profiles">
+    <header class="profiles-intro">
+     <p class="eyebrow">
+      GET TO KNOW US
+     </p>
+     <h2>
+      Meet the Team
+     </h2>
+     <p>
+      Meet the people behind our QR Code Scanner project and the roles each of us brings to the team.
+     </p>
+    </header>
+    <section aria-label="Faye Stephanie F. Bihag profile" class="profile-section" id="bihag">
+     <header class="profile-topbar">
+      <span aria-hidden="true" class="profile-lock">
+       ⌑
+      </span>
+      <h2 class="profile-username">
+       member.1
+      </h2>
+      <span aria-label="Team member" class="profile-status-dot">
+      </span>
+      <div aria-hidden="true" class="profile-topbar-actions">
+       <span class="profile-threads">
+        ＠
+       </span>
+       <span class="profile-create">
+        +
+       </span>
+       <span class="profile-menu">
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </span>
+      </div>
+     </header>
+     <div class="profile-header">
+      <div class="profile-picture-wrapper">
+       <div class="profile-picture-ring">
+        <img alt="Faye Stephanie F. Bihag's photo" class="profile-picture" src="assets/faye.png"/>
+       </div>
+       <span class="profile-note">
+        team
+        <br/>
+        updates...
+       </span>
+       <span aria-hidden="true" class="profile-add-badge">
+        +
+       </span>
+      </div>
+      <div class="profile-stats">
+       <div class="profile-stat">
+        <strong>
+         01
+        </strong>
+        <span>
+         project
+        </span>
+       </div>
+       <div class="profile-stat">
+        <strong>
+         01
+        </strong>
+        <span>
+         role
+        </span>
+       </div>
+       <div class="profile-stat">
+        <strong>
+         08
+        </strong>
+        <span>
+         group
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="profile-bio">
+      <p class="profile-display-name">
+       Faye Stephanie F. Bihag
+      </p>
+      <p class="profile-bio-text">
+       JavaScript Logic &amp; API Integration/Project Management &amp; Documentation &middot; Manages project tasks and documentation while developing JavaScript functionality and integrating APIs to ensure smooth website performance and efficient project execution.
+      </p>
+     </div>
+     <div class="profile-actions">
+      <span class="profile-action-button">
+       App Developer
+      </span>
+      <span class="profile-action-button">
+       Group 8
+      </span>
+     </div>
+    </section>
+    <section aria-label="Pauline S. Alvez profile" class="profile-section" id="alvez">
+     <header class="profile-topbar">
+      <span aria-hidden="true" class="profile-lock">
+       ⌑
+      </span>
+      <h2 class="profile-username">
+       member.2
+      </h2>
+      <span aria-label="Team member" class="profile-status-dot">
+      </span>
+      <div aria-hidden="true" class="profile-topbar-actions">
+       <span class="profile-threads">
+        ＠
+       </span>
+       <span class="profile-create">
+        +
+       </span>
+       <span class="profile-menu">
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </span>
+      </div>
+     </header>
+     <div class="profile-header">
+      <div class="profile-picture-wrapper">
+       <div class="profile-picture-ring">
+        <img alt="Pauline S. Alvez's photo" class="profile-picture" src="assets/alvez.png"/>
+       </div>
+       <span class="profile-note">
+        team
+        <br/>
+        updates...
+       </span>
+       <span aria-hidden="true" class="profile-add-badge">
+        +
+       </span>
+      </div>
+      <div class="profile-stats">
+       <div class="profile-stat">
+        <strong>
+         01
+        </strong>
+        <span>
+         project
+        </span>
+       </div>
+       <div class="profile-stat">
+        <strong>
+         02
+        </strong>
+        <span>
+         role
+        </span>
+       </div>
+       <div class="profile-stat">
+        <strong>
+         08
+        </strong>
+        <span>
+         group
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="profile-bio">
+      <p class="profile-display-name">
+       Pauline S. Alvez
+      </p>
+      <p class="profile-bio-text">
+       HTML Structure &amp; Semantics &middot; Responsible for organizing HTML content using proper structural elements and semantic tags to improve readability, accessibility, and webpage organization.
+      </p>
+     </div>
+     <div class="profile-actions">
+      <span class="profile-action-button">
+       Web Designer
+      </span>
+      <span class="profile-action-button">
+       Group 8
+      </span>
+     </div>
+    </section>
+    <section aria-label="Mary Jane Quisto profile" class="profile-section" id="quisto">
+     <header class="profile-topbar">
+      <span aria-hidden="true" class="profile-lock">
+       ⌑
+      </span>
+      <h2 class="profile-username">
+       member.3
+      </h2>
+      <span aria-label="Team member" class="profile-status-dot">
+      </span>
+      <div aria-hidden="true" class="profile-topbar-actions">
+       <span class="profile-threads">
+        ＠
+       </span>
+       <span class="profile-create">
+        +
+       </span>
+       <span class="profile-menu">
+        <i>
+        </i>
+        <i>
+        </i>
+        <i>
+        </i>
+       </span>
+      </div>
+     </header>
+     <div class="profile-header">
+      <div class="profile-picture-wrapper">
+       <div class="profile-picture-ring">
+        <img alt="Mary Jane Quisto's photo" class="profile-picture" src="assets/quisto.png"/>
+       </div>
+       <span class="profile-note">
+        team
+        <br/>
+        updates...
+       </span>
+       <span aria-hidden="true" class="profile-add-badge">
+        +
+       </span>
+      </div>
+      <div class="profile-stats">
+       <div class="profile-stat">
+        <strong>
+         01
+        </strong>
+        <span>
+         project
+        </span>
+       </div>
+       <div class="profile-stat">
+        <strong>
+         03
+        </strong>
+        <span>
+         role
+        </span>
+       </div>
+       <div class="profile-stat">
+        <strong>
+         08
+        </strong>
+        <span>
+         group
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="profile-bio">
+      <p class="profile-display-name">
+       Mary Jane Quisto
+      </p>
+      <p class="profile-bio-text">
+       CSS Styling &amp; Layout &middot; Responsible for designing and styling the website layout using CSS to ensure a visually appealing, consistent, and responsive user interface.
+      </p>
+     </div>
+     <div class="profile-actions">
+      <span class="profile-action-button">
+       Documentation
+      </span>
+      <span class="profile-action-button">
+       Group 8
+      </span>
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <span>
+    GROUP 8 &middot; IT 110 MIDTERMS
+   </span>
+   <a href="app.html">
+    Launch QR Scanner &nearrow;
+   </a>
+  </footer>
+  <script defer="" src="script.js">
+  </script>
+ </body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#f2efe8" name="theme-color"/>
+  <title>
+   QR Scanner | Group 8
+  </title>
+  <link href="app-style.css" rel="stylesheet"/>
+  <script crossorigin="anonymous" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js">
+  </script>
+  <script defer="" src="https://unpkg.com/html5-qrcode">
+  </script>
+  <script defer="" src="app.js">
+  </script>
+ </head>
+ <body>
+  <header class="app-header">
+   <a class="brand" href="index.html">
+    IT 110
+    <span>
+     / GROUP 8
+    </span>
+   </a>
+   <a class="back-link" href="index.html">
+    &larr; Back to portfolio
+   </a>
+  </header>
+  <main class="app-shell">
+   <section class="intro">
+    <p class="eyebrow">
+     SCAN &middot; READ &middot; DISCOVER
+    </p>
+    <h1>
+     QR Code
+     <span>
+      Scanner
+     </span>
+    </h1>
+    <p>
+     Scan a QR code with your camera or choose an image from your device. The decoded result will appear below.
+    </p>
+   </section>
+   <div class="scanner-grid">
+    <section aria-labelledby="scanner-heading" class="panel scanner-panel">
+     <div class="panel-heading">
+      <div>
+       <p class="eyebrow">
+        LIVE SCANNER
+       </p>
+       <h2 id="scanner-heading">
+        Camera
+       </h2>
+      </div>
+      <span class="status-pill" id="cameraStatus">
+       Ready
+      </span>
+     </div>
+     <div aria-label="QR code camera scanner" id="reader">
+     </div>
+     <div class="button-row">
+      <button class="button primary" id="startButton" type="button">
+       Start camera
+      </button>
+      <button class="button secondary" disabled="" id="stopButton" type="button">
+       Stop camera
+      </button>
+     </div>
+     <p class="helper">
+      Camera access usually requires HTTPS or localhost. Your browser will ask permission before the camera starts.
+     </p>
+     <div class="divider">
+      <span>
+       OR
+      </span>
+     </div>
+     <label class="upload-label" for="imageInput">
+      Scan a QR code from an image
+     </label>
+     <input accept="image/*" id="imageInput" type="file"/>
+     <p class="helper">
+      Choose a clear photo or screenshot containing one QR code.
+     </p>
+    </section>
+    <section aria-labelledby="result-heading" class="panel result-panel">
+     <div class="panel-heading">
+      <div>
+       <p class="eyebrow">
+        DECODED CONTENT
+       </p>
+       <h2 id="result-heading">
+        Scan result
+       </h2>
+      </div>
+      <span aria-hidden="true" class="result-icon">
+       ⌗
+      </span>
+     </div>
+     <div class="empty-state" id="emptyState">
+      <div class="empty-symbol">
+       ⌗
+      </div>
+      <h3>
+       Nothing scanned yet
+      </h3>
+      <p>
+       Your QR code content will show up here once it has been read.
+      </p>
+     </div>
+     <div class="result-content" hidden="" id="resultContent">
+      <p class="result-type" id="resultType">
+       TEXT / LINK
+      </p>
+      <textarea aria-label="Decoded QR code content" id="resultText" readonly="" rows="6"></textarea>
+      <div class="button-row result-buttons">
+       <button class="button primary" id="copyButton" type="button">
+        Copy result
+       </button>
+       <a class="button secondary" hidden="" href="#" id="openLinkButton" rel="noopener noreferrer" target="_blank">
+        Open link &nearrow;
+       </a>
+      </div>
+     </div>
+     <p aria-live="polite" class="message" id="message" role="status">
+      Ready when you are.
+     </p>
+     <button class="clear-button" id="clearButton" type="button">
+      Clear result
+     </button>
+    </section>
+   </div>
+   <section class="privacy-note">
+    <span class="privacy-mark">
+     i
+    </span>
+    <p>
+     <strong>
+      Privacy note
+     </strong>
+     <br/>
+     Camera access is requested only when you press &ldquo;Start camera.&rdquo; QR content is processed in this page by the scanner library. Review a link before opening it.
+    </p>
+   </section>
+  </main>
+  <footer class="app-footer">
+   <span>
+    GROUP 8 &middot; IT 110 MIDTERMS
+   </span>
+   <span>
+    QR CODE SCANNER
+   </span>
+  </footer>
+ </body>
+</html>
+
